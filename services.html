@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Grand Horizon Hotel</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="logo">Grand Horizon Hotel</div>
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu"><i class="fa fa-bars"></i></button>
+    </nav>
+    <button class="mode-toggle" id="mode-toggle" aria-label="Toggle dark/light mode"><i class="fa fa-moon"></i></button>
+  </header>
+  <main>
+    <h1>Our Services</h1>
+    <div class="services-list">
+      <div class="service-card">
+        <i class="fa fa-utensils"></i>
+        <h3>Fine Dining</h3>
+        <button class="expand-btn" aria-expanded="false">Details</button>
+        <div class="service-details">Enjoy gourmet cuisine in our award-winning restaurants.</div>
+      </div>
+      <div class="service-card">
+        <i class="fa fa-spa"></i>
+        <h3>Spa & Wellness</h3>
+        <button class="expand-btn" aria-expanded="false">Details</button>
+        <div class="service-details">Relax and rejuvenate with our full-service spa and wellness center.</div>
+      </div>
+      <div class="service-card">
+        <i class="fa fa-champagne-glasses"></i>
+        <h3>Event Spaces</h3>
+        <button class="expand-btn" aria-expanded="false">Details</button>
+        <div class="service-details">Host memorable events in our elegant venues.</div>
+      </div>
+      <div class="service-card">
+        <i class="fa fa-concierge-bell"></i>
+        <h3>24/7 Concierge</h3>
+        <button class="expand-btn" aria-expanded="false">Details</button>
+        <div class="service-details">Our concierge is always available to assist you.</div>
+      </div>
+    </div>
+    <div class="room-checker">
+      <h3>Check Room Availability</h3>
+      <form id="room-check-form">
+        <input type="date" name="checkin" required aria-label="Check-in date">
+        <input type="date" name="checkout" required aria-label="Check-out date">
+        <button type="submit">Check Availability</button>
+      </form>
+      <div id="room-check-result"></div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-bottom">
+      <span>&copy; 2026 Grand Horizon Hotel. All rights reserved.</span>
+      <button class="back-to-top" id="back-to-top" aria-label="Back to top"><i class="fa fa-arrow-up"></i></button>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
